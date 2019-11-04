@@ -1,0 +1,165 @@
+//| Colours
+//|=================================================#
+// Vendor Colour Themes
+// class, background, foreground
+$vendor_themes: (
+  ('mcf-red', #ED1C24, $white),
+  ('bosch-blue', #215F8B, #CBCBCB),
+  ('dewalt-yellow', #FEBD17, $black),
+  ('makita-blue', #008a97, $white),
+  ('ridgid-black', $black, $white),
+) !default;
+
+$catalogue_themes: (
+  ('tfg-plum', #93268F, $white),
+  ('tfg-jacksons-purple', #21409B, $white),
+  ('tfg-cerulean', #01ADEF, $white),
+  ('tfg-flamingo', #F36523, $white),
+  ('tfg-scarpa-flow', #58585A, $white),
+  ('tfg-jumbo', #828186, $white),
+  ('tfg-key-lime-pie', #CBCD2C, $white),
+  ('tfg-driftwood', #A97C52, $white),
+  ('tfg-pomegranate', #F03F37, $white),
+  ('tfg-dallas', #774C2A, $white),
+  ('tfg-lightning-yellow', #FFC221, $white),
+  ('tfg-hollywood-cerise', #ED008C, $white),
+  ('tfg-salem', #089444, $white),
+  ('tfg-salem-blk', #089444, $black),
+  ('tfg-sushi', #8EC63F, $white),
+  ('tfg-malibu', #8DD8F8, $white),
+  ('tfg-wisteria', #B47AB5, $white),
+  ('tfg-denim', #0F75BD, $white),
+) !default;
+
+//| Fonts
+//|=================================================#
+
+//| Buffers
+//|=================================================#
+$xs-buffer: 8px !default;
+$sm-buffer: 16px !default;
+$md-buffer: 32px !default;
+$lg-buffer: 64px !default;
+$xl-buffer: 128px !default;
+
+//| Containers
+//|=================================================#
+// #page
+$page-width:          auto !default;
+$page-height:         auto !default;
+$page-margin-top:     0 !default;
+$page-margin-right:   0 !default;
+$page-margin-bottom:  0 !default;
+$page-margin-left:    0 !default;
+$page-background:     transparent !default;
+
+// #section-header
+$section-header-width:          auto !default;
+$section-header-height:         62px !default;
+$section-header-margin-top:     0 !default;
+$section-header-margin-right:   0 !default;
+$section-header-margin-bottom:  0 !default;
+$section-header-margin-left:    0 !default;
+$section-header-background:     transparent !default;
+
+$data-sticky-section-header-width: 100% !default;
+
+// #section-main
+$section-main-width:            auto !default;
+$section-main-height:           auto !default;
+$section-main-min-height:       517px !default;
+$section-main-margin-top:       $lg-buffer !default;
+$section-main-margin-right:     0 !default;
+$section-main-margin-bottom:    $lg-buffer !default;
+$section-main-margin-left:      0 !default;
+$section-main-background:       transparent !default;
+
+// #section-aside
+$section-aside-width:           auto !default;
+$section-aside-height:          auto !default;
+$section-aside-margin-top:      0 !default;
+$section-aside-margin-right:    0 !default;
+$section-aside-margin-bottom:   0 !default;
+$section-aside-margin-left:     0 !default;
+$section-aside-background:      transparent !default;
+
+// #section-footer
+$section-footer-width:          auto !default;
+$section-footer-height:         auto !default;
+$section-footer-margin-top:     0 !default;
+$section-footer-margin-right:   0 !default;
+$section-footer-margin-bottom:  0 !default;
+$section-footer-margin-left:    0 !default;
+$section-footer-background:     transparent !default;
+
+//| Header Hero
+//|=================================================#
+// .header-hero
+$header-hero-width:           auto !default;
+$header-hero-height:          calc(#{$xl-buffer} * 4) !default;
+$header-hero-padding-top:     6rem !default;
+$header-hero-padding-right:   0 !default;
+$header-hero-position:        relative !default;
+
+// .header-hero:after
+$header-hero-after-content:                 "" !default;
+$header-hero-after-background:              url(../assets/img/hero.jpg) !default;
+$header-hero-after-background-attachment:   fixed !default;
+$header-hero-after-background-position:     center !default;
+$header-hero-after-background-repeat:       no-repeat !default;
+$header-hero-after-background-size:         cover !default;
+$header-hero-after-opacity:                 0.25 !default;
+$header-hero-after-top:                     0 !default;
+$header-hero-after-right:                   0 !default;
+$header-hero-after-bottom:                  0 !default;
+$header-hero-after-left:                    0 !default;
+$header-hero-after-position:                absolute !default;
+$header-hero-after-z-index:                 -1 !default;
+
+// .header-hero-body
+$header-hero-body-text-align:           center !default;
+$header-hero-body-h2-padding-top:       8px !default;
+$header-hero-body-h2-padding-right:     0 !default;
+$header-hero-body-h2-padding-bottom:    8px !default;
+$header-hero-body-h2-padding-left:      0 !default;
+$header-hero-body-h2-font-size:         1.25rem !default;
+$header-hero-body-h2-color:             $medium-gray !default;
+$header-hero-body-img-width:            100% !default;
+$header-hero-body-img-max-width:        300px !default;
+$header-hero-body-img-height:           auto !default;
+
+// .header-hero-brand
+$header-hero-brand-position:      fixed !default;
+$header-hero-brand-top:           0 !default;
+$header-hero-brand-right:         0 !default;
+$header-hero-brand-left:          0 !default;
+$header-hero-brand-z-index:       10 !default;
+$header-hero-brand-margin:        0.75rem !default;
+$header-hero-brand-width:         100% !default;
+$header-hero-brand-max-width:     42px !default;
+$header-hero-brand-height:        auto !default;
+//$header-hero-brand-transition:    all 1s ease !default;
+
+// .header-hero-cta
+$header-hero-cta-position:      fixed !default;
+$header-hero-cta-top:           0 !default;
+$header-hero-cta-right:         0 !default;
+$header-hero-cta-z-index:       10 !default;
+$header-hero-cta-padding:       0.75rem !default;
+$header-hero-cta-transition:    all 1s ease !default;
+
+// .multi-bar .top-bar
+$multi-bar-top-bar-link-color:                  $white !default;
+$multi-bar-top-bar-not-last-child-background:   lighten($light-gray, 3.5%) !default;
+$multi-bar-top-bar-transition:                  all .2s ease !default;
+$multi-bar-top-bar-big-padding:                 1.75rem !default;
+$multi-bar-top-bar-small-padding:               0.75rem !default;
+
+// .multi-bar .top-bar .is-stuck
+$multi-bar-top-bar-is-stuck-padding:            calc(#{$multi-bar-top-bar-big-padding} - 1.00rem) !default;
+$multi-bar-top-bar-is-stuck-padding-left:       calc(75px - #{$multi-bar-top-bar-is-stuck-padding}) !default;
+$multi-bar-top-bar-is-stuck-padding-right:      calc(160px - #{$multi-bar-top-bar-is-stuck-padding}) !default;
+
+// .multi-bar #responsive-menu-toggle
+$multi-bar-responsive-menu-toggle-background:   lighten($medium-gray, 3.5%) !default;
+$multi-bar-responsive-menu-toggle-title-width:  100% !default;

@@ -1,0 +1,17 @@
+{
+	"name": "julianmaciel/automad-lite",
+	"description": "A responsive multi-purpose theme for the Automad CMS based on the Bootstrap framework.",
+	"type": "automad-package",
+	"keywords": ["theme"],
+	"authors": [
+		{
+			"name": "Julian Stephan Maciel",
+			"homepage": "https://julianmaciel.ca"
+		}
+	],
+	"license": "MIT",
+	"require": {
+		"automad/package-installer": "^1.1",
+		"automad/meta-tags": "^1.1 || dev-default"
+	}
+}

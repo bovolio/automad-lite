@@ -1,0 +1,46 @@
+#page{
+  width: $page-width;
+  height: $page-height;
+  margin: $page-margin-top $page-margin-right $page-margin-bottom $page-margin-left;
+  margin: $page-margin-top $page-margin-right $page-margin-bottom $page-margin-left;
+  background: $page-background;
+
+  #section-header{
+    width: $section-header-width;
+    height: $section-header-height;
+    margin: $section-header-margin-top $section-header-margin-right $section-header-margin-bottom $section-header-margin-left;
+    background: $section-header-background;
+
+    [data-sticky]{
+      width: $data-sticky-section-header-width;
+    }
+  }
+
+  #section-main{
+    width: $section-main-width;
+    min-height: $section-main-min-height;
+    height: $section-main-height;
+    margin: $section-main-margin-top $section-main-margin-right $section-main-margin-bottom $section-main-margin-left;
+    background: $section-main-background;
+  }
+  #section-aside{
+    width: $section-aside-width;
+    height: $section-aside-height;
+    margin: $section-aside-margin-top $section-aside-margin-right $section-aside-margin-bottom $section-aside-margin-left;
+    background: $section-aside-background;
+  }
+  #section-footer{
+    width: $section-footer-width;
+    height: $section-footer-height;
+    margin: $section-footer-margin-top $section-footer-margin-right $section-footer-margin-bottom $section-footer-margin-left;
+    background: $section-footer-background;
+  }
+
+  .tfg-cat-div{
+    background: #111111;
+    padding: 1rem;
+    ul:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+}

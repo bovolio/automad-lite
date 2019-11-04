@@ -1,0 +1,32 @@
+{
+  "name": "automad-lite",
+  "version": "1.0.0",
+  "description": "A responsive multi-purpose theme for the [Automad](http://automad.org) CMS based on the [Bootstrap](https://getbootstrap.com) framework.  Check out the demo page and all available templates [here](https://bootstrap.dev.automad.org).",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "4.3.1",
+    "jquery": "3.4.1",
+    "popper.js": "1.16.0"
+  },
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "fibers": "^4.0.2",
+    "laravel-mix": "^5.0.0",
+    "node-sass": "^4.13.0",
+    "resolve-url-loader": "^3.1.0",
+    "sass": "^1.23.2",
+    "sass-loader": "^8.0.0",
+    "vue-template-compiler": "^2.6.10"
+  }
+}

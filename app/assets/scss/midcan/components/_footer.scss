@@ -1,0 +1,12 @@
+.footer{
+  font-size: 12px;
+  padding: 2rem 0;
+  background: map-get($foundation-palette, secondary);
+  color: $medium-gray;
+  h6{
+    color: $dark-gray;
+  }
+  a{
+    color: $white;
+  }
+}

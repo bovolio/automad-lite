@@ -1,0 +1,20 @@
+// Margin Buffers.
+.buffer-m-b-64{margin-bottom: 64px;}
+.buffer-m-t-64{margin-top: 64px;}
+.buffer-m-t-32{margin-top: 32px;}
+
+// Vendor Themes.
+@each $vendor in $vendor_themes {
+  .#{nth($vendor, 1)} {
+    background: #{nth($vendor, 2)};
+    color: #{nth($vendor, 3)};
+  }
+}
+
+// TFG Catalogue Themes.
+@each $section in $catalogue_themes {
+  .#{nth($section, 1)} {
+    background: #{nth($section, 2)};
+    color: #{nth($section, 3)};
+  }
+}

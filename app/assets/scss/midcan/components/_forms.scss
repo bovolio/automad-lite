@@ -1,0 +1,8 @@
+input.error,
+textarea.error{
+  border: 1px solid map-get($foundation-palette, alert);
+}
+input.valid,
+textarea.valid{
+  border: 1px solid map-get($foundation-palette, success);
+}
