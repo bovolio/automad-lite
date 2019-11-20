@@ -17,3 +17,4 @@
 		</div>
 	</div>
 <@ end @>
+<!-- EDGE CASE: HERO IMAGE DOES NOT OPEN ON IPHONE X + more? -->

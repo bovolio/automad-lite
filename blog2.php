@@ -1,27 +1,25 @@
 <?php defined('AUTOMAD') or die('Direct access not permitted!'); ?>
+<@ snippets/header.php @>
 
-	<@ snippets/header_hero.php @>
 	<@ snippets/carousel_full_width.php @>
-	<@ snippets/header.php @>
+
 	<@ newPagelist {
 		type: 'children',
 		context: @{ showPagesBelow },
 		filter: @{ ?filter },
 		search: @{ ?search },
-		sort: @{ sortPages | def ('date desc') },
-		template: @{ templateFilter },
-		limit: 6
+		sort: 'date desc',
+		template: @{ templateFilter }
 	} @>
-	
-	<@ if @{ checkboxShowAllPagesInPagelist } or @{ ?search } @>
-		<@ pagelist { type: false } @>
-	<@ end @>
 	
 	<@ if not @{ checkboxHideTeaser } @>
 		<div class="container pt-5 pb-5">
-			<div class="row" style="justify-content: center">
+			<div class="row">
 				<# Use one single grid column to limit the width on large screens. #>
-				<div class="col-lg-12">
+				<div class="col">
+					<h1 class="text-center">Current Flyers</h1>
+<hr class="mr-ml-6"></hr>
+					<p class="text-center">Check out all Mid-Canada Fasteners and Tools flyers here! Click any flyer to view it in fullscreen mode.</p>
 					<div class="lead mb-n2">
 						<@ snippets/text_teaser.php @>
 					</div>	
@@ -30,11 +28,14 @@
 		</div>
 	<@ end @>
 
-	<@ if @{ :pagelistCount } @>
-		<div class="container pb-2">
-			<@ snippets/filters.php @>
-		</div>
-		<@ snippets/pagelist_projects.php @>
+	<@ if @{ checkboxShowAllPagesInPagelist } or @{ ?search } @>
+		<@ pagelist { type: false } @>
 	<@ end @>
 	
+	<@ if @{ :pagelistCount } @>
+		<div class="container pb-5">
+			<@ snippets/filters.php @>
+		</div>
+		<@ snippets/pagelist_posts.php @>
+	<@ end @>
 <@ snippets/footer.php @> 

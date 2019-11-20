@@ -1,4 +1,5 @@
 'use strict';
 
-import * as $ from 'jquery';
+import './flickity';
 import 'bootstrap';
+import './bootstrap';

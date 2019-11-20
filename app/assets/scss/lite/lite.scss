@@ -1,63 +1,64 @@
-.button{
-    display: inline-block;
-    text-align: center;
-    line-height: 1;
-    cursor: pointer;
-    -webkit-appearance: none;
-    transition: background-color .25s ease-out,color .25s ease-out;
-    vertical-align: middle;
-    border: 1px solid transparent;
-    border-radius: 0;
-    padding: .85em 1em;
-    margin: 0 0 1rem 0;
-    font-size: .9rem;
-    background-color: #ed1c24;
-    color: #fefefe;
-}
-
-.button.hollow:focus, .button.hollow:hover {
-    border-color: #7b0a0e;
-    color: #7b0a0e;
-}
-.button.hollow {
-    border: 1px solid #ed1c24;
+@import "components/footer";
+@import "components/header";
+@import "util/util";
+@import "components/hover";
+a {
     color: #ed1c24;
+    text-decoration: none;
+    line-height: inherit;
+    cursor: pointer;
 }
-.button.notice {
-    background-color: #2975ff;
-    color: #fefefe;
+a.card-title-link {
+    color: #212529;
 }
-.button:focus, .button:hover {
-    background-color: #d11118;
-    color: #fefefe;
+a.card-title-link:hover {
+    color: #212529;
+    text-decoration: none;
 }
-.button.notice:focus, .button.notice:hover {
-    background-color: #0054ed;
-    color: #fefefe;
+.gallery-cell {
+    width: 33%;
+    height: 500px;
+    margin-right: 10px;
 }
-.button.hollow.notice {
-    border: 1px solid #2975ff;
-    color: #2975ff;
+@media only screen and (max-width: 600px){
+    .gallery-cell {
+        width: 100%;
+        height: 450px;
+        margin-right: 10px;
+    }
+    .flickity-prev-next-button {
+        width: 70px !important;
+        height: 70px !important;
+        transform: translateY(210%);
+      }
 }
-.button.hollow, .button.hollow:focus, .button.hollow:hover {
-    background-color: transparent;
-}
-.header-hero:after {
-    content: "";
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: .25;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+.flickity-enabled:focus .flickity-viewport {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+.centered-btn {
     position: absolute;
-    z-index: -1;
-}
-.header-hero {
-    width: auto;
-    padding: 6rem 0;
-    position: relative;
-}
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* no circle */
+// .flickity-button {
+//     background: transparent !important;
+//   }
+  .flickity-button {
+    background: hsla(0, 0%, 39%, 0.75) !important;
+} 
+  /* big previous & next buttons */
+  .flickity-prev-next-button {
+    width: 100px ;
+    height: 100px ;
+  }
+  /* icon color */
+  .flickity-button-icon {
+    fill: black;
+  }
+  .alt-title {
+    text-align: center;
+
+  }

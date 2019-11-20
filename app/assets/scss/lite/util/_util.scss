@@ -1,0 +1,20 @@
+i {
+    color: #5d5d5d;
+}
+.hover10 {
+	-webkit-filter: grayscale(25%) blur(1px);
+    filter: grayscale(25%) blur(1px);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover11 {
+	opacity: .5;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.grow {
+	transition: all .2s ease-in-out;
+}
+.grow:hover {
+	transform: scale(0.9);
+}
